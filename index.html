@@ -3,69 +3,160 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Modern Landing Page</title>
+
+    <meta name="description" content="Nexus - A modern responsive landing page">
+    <meta name="author" content="Nexus Studio">
+
+    <title>Nexus | Modern Landing Page</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
     
     <header>
-        <nav id="navbar">
-            <div class="logo">Nexus.</div>
-            <ul class="nav-links">
+        <nav id="navbar" aria-label="Main Navigation">
+
+            <a href="#home" class="logo">Nexus.</a>
+
+            <button class="menu-toggle" id="menu-toggle"
+                    aria-label="Toggle navigation"
+                    aria-expanded="false">
+                ☰
+            </button>
+
+            <ul class="nav-links" id="nav-links">
                 <li><a href="#home">Home</a></li>
                 <li><a href="#features">Features</a></li>
                 <li><a href="#about">About</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
+
         </nav>
     </header>
 
-    
-    <section id="home" class="hero">
-        <div class="hero-content">
-            <h1>Build Something Amazing Today</h1>
-            <p>Create stunning web experiences with clean code and modern design.</p>
-            <a href="#features" class="cta-btn">Get Started</a>
-        </div>
-    </section>
 
     
-    <section id="features" class="features-section">
-        <h2>Core Features</h2>
-        <div class="card-grid">
-            <div class="card">
-                <h3>Fast Performance</h3>
-                <p>Optimized code ensuring lightning-fast load times across devices.</p>
-            </div>
-            <div class="card">
-                <h3>Fully Responsive</h3>
-                <p>Adapts seamlessly to mobile phones and large desktop screens.</p>
-            </div>
-            <div class="card">
-                <h3>Interactive UI</h3>
-                <p>Dynamic navigation and smooth scrolling for a better experience.</p>
-            </div>
-        </div>
-    </section>
+    <main>
 
-    
-    <section id="about" class="about-section">
-        <h2>About The Project</h2>
-        <p>This landing page is crafted to showcase modern design principles and interactive front-end development skills.</p>
-    </section>
+        <section id="home" class="hero">
 
-    
-    <section id="contact" class="contact-section">
-        <h2>Get in Touch</h2>
-        <p>Have questions or want to collaborate? Reach out to us anytime.</p>
-    </section>
+            <div class="hero-content">
+
+                <span class="hero-tag">Welcome to Nexus</span>
+
+                <h1>Build Something Amazing Today</h1>
+
+                <p>
+                    Create stunning web experiences with clean code,
+                    modern design and responsive layouts.
+                </p>
+
+                <a href="#features" class="cta-btn">
+                    Get Started
+                </a>
+
+            </div>
+
+        </section>
+
+
+        
+        <section id="features" class="features-section">
+
+            <div class="section-heading">
+                <span>What We Offer</span>
+                <h2>Core Features</h2>
+                <p>
+                    Everything you need to create a modern web experience.
+                </p>
+            </div>
+
+            <div class="card-grid">
+
+                <article class="card">
+                    <div class="card-icon">⚡</div>
+                    <h3>Fast Performance</h3>
+                    <p>
+                        Optimized code ensuring lightning-fast
+                        load times across devices.
+                    </p>
+                </article>
+
+                <article class="card">
+                    <div class="card-icon">📱</div>
+                    <h3>Fully Responsive</h3>
+                    <p>
+                        Adapts seamlessly to mobile phones,
+                        tablets and desktop screens.
+                    </p>
+                </article>
+
+                <article class="card">
+                    <div class="card-icon">✨</div>
+                    <h3>Interactive UI</h3>
+                    <p>
+                        Smooth navigation and interactive elements
+                        for a better user experience.
+                    </p>
+                </article>
+
+            </div>
+
+        </section>
+
+
+        
+        <section id="about" class="about-section">
+
+            <div class="section-heading">
+                <span>About</span>
+                <h2>About The Project</h2>
+
+                <p>
+                    Nexus is a responsive landing page designed
+                    to demonstrate modern web design principles,
+                    clean code and interactive front-end development.
+                </p>
+            </div>
+
+        </section>
+
+
+        
+        <section id="contact" class="contact-section">
+
+            <div class="section-heading">
+                <span>Contact</span>
+                <h2>Get in Touch</h2>
+
+                <p>
+                    Have questions or want to collaborate?
+                    Feel free to reach out anytime.
+                </p>
+
+                <a href="mailto:hello@nexus.com" class="contact-btn">
+                    Contact Us
+                </a>
+            </div>
+
+        </section>
+
+    </main>
+
 
     
     <footer>
         <p>&copy; 2026 Nexus Studio. All rights reserved.</p>
     </footer>
 
+
     <script src="script.js"></script>
+
 </body>
 </html>
